@@ -16,3 +16,6 @@ $ git push <remote-shortname> <branch>
 ~~~
 # Working on Another Person's Repo
 In version control terminology if you "fork" a repository that means you duplicate it. Typically you fork a repository that belongs to someone else. So you make an identical copy of their repository and that duplicate copy now belongs to you. When you clone a repository, you get an identical copy of the repository. But cloning happens on your local machine and you clone a remote repository. 
+
+**Forking A Repository**
+In version control terminology if you "fork" a repository that means you duplicate it. Typically you fork a repository that belongs to someone else. So you make an identical copy of their repository and that duplicate copy now belongs to you. 
