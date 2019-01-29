@@ -17,5 +17,30 @@ $ git push <remote-shortname> <branch>
 # Working on Another Person's Repo
 In version control terminology if you "fork" a repository that means you duplicate it. Typically you fork a repository that belongs to someone else. So you make an identical copy of their repository and that duplicate copy now belongs to you. When you clone a repository, you get an identical copy of the repository. But cloning happens on your local machine and you clone a remote repository. 
 
+Before you start doing any work, make sure to look for the project's CONTRIBUTING.md file. Next, it's a good idea to look at the GitHub issues for the project
+ * look at the existing issues to see if one is similar to the change you want to contribute
+ * if necessary create a new issue
+ * communicate the changes you'd like to make to the project maintainer in the
+
+When you start developing, commit all of your work on a topic branch:
+ * do not work on the master branch
+ * make sure to give the topic branch clear, descriptive name
+
+As a general best practice for writing commits:
+ * make frequent, smaller commits
+ * use clear and descriptive commit messages
+ * update the README file, if necessary
+ 
 **Forking A Repository**
 In version control terminology if you "fork" a repository that means you duplicate it. Typically you fork a repository that belongs to someone else. So you make an identical copy of their repository and that duplicate copy now belongs to you. 
+
+# Reviewing Existing Work
+**Group by Commit Author**
+A quick way to see how many commits each contributor has added to the repository is to use the 
+~~~ 
+$git shortlog
+~~~
+ * -s: to show just the number of commits (rather than each commit's message
+ * -n: to sort them numerically (rather than alphabetically by author name
+**Filter by Author**
+Another way that we can display all of the commits by an author is to use the regular git log command but include the --author flag
