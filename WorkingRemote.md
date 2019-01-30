@@ -44,3 +44,16 @@ $git shortlog
  * -n: to sort them numerically (rather than alphabetically by author name
 **Filter by Author**
 Another way that we can display all of the commits by an author is to use the regular git log command but include the --author flag
+# Rebase Commands
+The command will move commits to have a new base. In the command git rebase -i HEAD~3, we're telling Git to use HEAD~3 as the base where all of the other commits (HEAD~2, HEAD~1, and HEAD) will connect to. Whenever you rebase commits, Git will create a new SHA for each commit! This has drastic implications. To Git, the SHA is the identifier for a commit, so a different identifier means it's a different commit, regardless if the content has changed at all.
+
+ * use p or pick – to keep the commit as is
+ * use r or reword – to keep the commit's content but alter the commit message
+ * use e or edit – to keep the commit's content but stop before committing so that you can:
+ * add new content or files
+ * remove content or files
+ * alter the content that was going to be committed
+ * use s or squash – to combine this commit's changes into the previous commit (the commit above it in the list)
+ * use f or fixup – to combine this commit's change into the previous one but drop the commit message
+ * use x or exec – to run a shell command
+ * use d or drop – to delete the commi
